@@ -76,19 +76,7 @@ const Navbar = () => {
                         ))}
                     </div>
 
-                    {/* CTA Button (Desktop) */}
-                    <div className="hidden md:block">
-                        <Link href="/contact">
-                            <Button
-                                type="primary"
-                                shape="round"
-                                size="large"
-                                className={`${scrolled ? 'bg-blue-600' : 'bg-blue-500 border-none hover:bg-blue-400'}`}
-                            >
-                                Get Quote
-                            </Button>
-                        </Link>
-                    </div>
+
 
                     {/* Mobile Menu Button */}
                     <div className="md:hidden">
@@ -122,13 +110,7 @@ const Navbar = () => {
                         ),
                     }))}
                 />
-                <div className="p-6 mt-4">
-                    <Link href="/contact" onClick={onClose}>
-                        <Button type="primary" size="large" block className="h-12 text-lg">
-                            Get a Free Quote
-                        </Button>
-                    </Link>
-                </div>
+
             </Drawer>
         </nav>
     );
