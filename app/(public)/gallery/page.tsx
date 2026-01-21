@@ -1,6 +1,6 @@
-import { Card } from 'antd';
 import dbConnect from '@/lib/db';
 import Gallery from '@/models/Gallery';
+import GalleryGrid from '@/components/GalleryGrid';
 
 async function getGallery() {
     try {
@@ -27,7 +27,6 @@ export default async function GalleryPage() {
     ];
 
     const items = dbItems.length > 0 ? dbItems : fallbackItems;
-    const { Meta } = Card;
 
     return (
         <div className="bg-gray-50 min-h-screen">
@@ -45,27 +44,8 @@ export default async function GalleryPage() {
             </div>
 
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    {items.map((item: any) => (
-                        <Card
-                            key={item._id}
-                            hoverable
-                            className="rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-300 border-0 group"
-                            cover={
-                                <div className="h-72 overflow-hidden relative">
-                                    <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors z-10" />
-                                    <img alt={item.title} src={item.imageUrl} className="h-full w-full object-cover group-hover:scale-110 transition-transform duration-700" />
-                                </div>
-                            }
-                            styles={{ body: { padding: '1rem', textAlign: 'center' } }}
-                        >
-                            <Meta
-                                title={<span className="text-lg font-bold text-gray-800">{item.title}</span>}
-                            />
-                        </Card>
-                    ))}
-                </div>
+                <GalleryGrid items={items} />
             </div>
-        </div >
+        </div>
     );
 }
