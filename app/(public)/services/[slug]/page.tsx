@@ -104,13 +104,11 @@ export default async function ServiceDetailPage({ params }: PageProps) {
             {/* Hero Header */}
             <div className="relative h-[400px] w-full bg-slate-900 overflow-hidden">
                 <div className="absolute inset-0 bg-blue-900/60 z-10" />
-                {service.image && (
-                    <img
-                        src={service.image}
-                        alt={service.title}
-                        className="absolute inset-0 w-full h-full object-cover opacity-60"
-                    />
-                )}
+                <img
+                    src={service.image || 'https://images.unsplash.com/photo-1555963966-b7ae5404b6ed?q=80&w=2670&auto=format&fit=crop'}
+                    alt={service.title}
+                    className="absolute inset-0 w-full h-full object-cover opacity-60"
+                />
                 <div className="absolute inset-0 z-20 flex flex-col justify-center items-center text-center px-4">
                     <h1 className="text-4xl md:text-6xl font-bold text-white mb-4 drop-shadow-lg">{service.title}</h1>
                     <div className="w-24 h-1 bg-blue-400 rounded-full mb-6"></div>

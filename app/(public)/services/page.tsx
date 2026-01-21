@@ -88,11 +88,11 @@ export default async function ServicesPage() {
                             <div className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 h-full flex flex-col hover:-translate-y-1">
                                 <div className="h-48 relative overflow-hidden">
                                     <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors z-10" />
-                                    {service.image ? (
-                                        <img alt={service.title} src={service.image} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
-                                    ) : (
-                                        <div className="w-full h-full flex items-center justify-center bg-gray-200 text-gray-400">No Image</div>
-                                    )}
+                                    <img
+                                        alt={service.title}
+                                        src={service.image || 'https://images.unsplash.com/photo-1555963966-b7ae5404b6ed?q=80&w=2670&auto=format&fit=crop'}
+                                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                                    />
                                 </div>
                                 <div className="p-6 flex flex-col flex-grow">
                                     <h3 className="text-xl font-bold mb-3 text-gray-900 group-hover:text-blue-600 transition-colors">{service.title}</h3>
