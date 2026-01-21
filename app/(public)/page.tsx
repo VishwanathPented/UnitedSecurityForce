@@ -229,11 +229,16 @@ export default async function Home() {
       <section className="py-20 bg-slate-900 text-white border-y border-slate-800">
         <div className="max-w-7xl mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-12">Trusted by Industry Leaders</h2>
-          <div className="flex flex-wrap justify-center gap-12 md:gap-20 opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
-            {/* Placeholders for logos (using text for now to keep it generic but clean) */}
-            {['TechCorp', 'BuildSafe', 'GlobalLogic', 'Urban Stay', 'Metro Systems'].map((brand, i) => (
-              <div key={i} className="text-2xl font-black tracking-tighter hover:text-blue-400 cursor-pointer transition-colors">
-                {brand}
+          <div className="flex flex-wrap justify-center items-center gap-12 md:gap-20 opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
+            {[
+              'https://logo.clearbit.com/google.com',
+              'https://logo.clearbit.com/microsoft.com',
+              'https://logo.clearbit.com/spotify.com',
+              'https://logo.clearbit.com/amazon.com',
+              'https://logo.clearbit.com/airbnb.com'
+            ].map((logo, i) => (
+              <div key={i} className="h-12 w-auto transition-transform hover:scale-110">
+                <img src={logo} alt="Partner Logo" className="h-full w-auto object-contain brightness-0 invert" />
               </div>
             ))}
           </div>
