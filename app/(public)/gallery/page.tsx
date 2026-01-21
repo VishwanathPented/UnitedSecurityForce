@@ -59,7 +59,7 @@ export default async function GalleryPage() {
                             }
                             styles={{ body: { padding: '1rem', textAlign: 'center' } }}
                         >
-                            <Card.Meta
+                            <Meta
                                 title={<span className="text-lg font-bold text-gray-800">{item.title}</span>}
                             />
                         </Card>
