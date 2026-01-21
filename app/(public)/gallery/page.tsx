@@ -27,6 +27,7 @@ export default async function GalleryPage() {
     ];
 
     const items = dbItems.length > 0 ? dbItems : fallbackItems;
+    const { Meta } = Card;
 
     return (
         <div className="bg-gray-50 min-h-screen">
