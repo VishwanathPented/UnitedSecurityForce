@@ -25,7 +25,11 @@ export default async function ClientsPage() {
         { _id: '5', name: 'EduSystems', category: 'Education', logoUrl: 'https://logo.clearbit.com/harvard.edu' },
         { _id: '6', name: 'Metro Build', category: 'Construction', logoUrl: 'https://logo.clearbit.com/cat.com' },
         { _id: '7', name: 'Safe Bank', category: 'Banking', logoUrl: 'https://logo.clearbit.com/chase.com' },
-        { _id: '8', name: 'Retail Giant', category: 'Retail', logoUrl: 'https://logo.clearbit.com/walmart.com' }
+        { _id: '8', name: 'Retail Giant', category: 'Retail', logoUrl: 'https://logo.clearbit.com/walmart.com' },
+        { _id: '9', name: 'Tech Giant', category: 'Technology', logoUrl: 'https://logo.clearbit.com/ibm.com' },
+        { _id: '10', name: 'Auto Motive', category: 'Automotive', logoUrl: 'https://logo.clearbit.com/ford.com' },
+        { _id: '11', name: 'Beverage Co', category: 'FMCG', logoUrl: 'https://logo.clearbit.com/coca-cola.com' },
+        { _id: '12', name: 'Airline', category: 'Travel', logoUrl: 'https://logo.clearbit.com/delta.com' }
     ];
 
     const clients = dbClients.length > 0 ? dbClients : fallbackClients;
@@ -50,11 +54,11 @@ export default async function ClientsPage() {
                     {clients.map((client: any) => (
                         <div key={client._id} className="flex flex-col items-center p-8 bg-white rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group">
                             <div className="h-20 w-20 relative mb-4 flex items-center justify-center">
-                                {client.logoUrl ? (
-                                    <img src={client.logoUrl} alt={client.name} className="max-h-full max-w-full object-contain grayscale group-hover:grayscale-0 transition-all duration-300" />
-                                ) : (
-                                    <Avatar size={64} style={{ backgroundColor: '#e6f7ff', color: '#1890ff', fontSize: '24px' }}>{client.name[0]}</Avatar>
-                                )}
+                                <img
+                                    src={client.logoUrl || `https://ui-avatars.com/api/?name=${client.name}&background=e6f7ff&color=1890ff&size=128`}
+                                    alt={client.name}
+                                    className="max-h-full max-w-full object-contain grayscale group-hover:grayscale-0 transition-all duration-300"
+                                />
                             </div>
                             <h3 className="text-center font-bold text-gray-800 group-hover:text-blue-600 transition-colors">{client.name}</h3>
                             <span className="text-xs text-gray-400 mt-1 uppercase tracking-wider font-semibold">{client.category}</span>
