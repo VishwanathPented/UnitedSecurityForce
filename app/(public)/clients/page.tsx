@@ -18,18 +18,18 @@ export default async function ClientsPage() {
     const dbClients = await getClients();
 
     const fallbackClients = [
-        { _id: '1', name: 'Tech Solutions', category: 'Corporate', logoUrl: '' },
-        { _id: '2', name: 'Global Logistics', category: 'Industrial', logoUrl: '' },
-        { _id: '3', name: 'City Hospital', category: 'Healthcare', logoUrl: '' },
-        { _id: '4', name: 'Grand Hotel', category: 'Hospitality', logoUrl: '' },
-        { _id: '5', name: 'EduSystems', category: 'Education', logoUrl: '' },
-        { _id: '6', name: 'Metro Build', category: 'Construction', logoUrl: '' },
-        { _id: '7', name: 'Safe Bank', category: 'Banking', logoUrl: '' },
-        { _id: '8', name: 'Retail Giant', category: 'Retail', logoUrl: '' },
-        { _id: '9', name: 'Tech Giant', category: 'Technology', logoUrl: '' },
-        { _id: '10', name: 'Auto Motive', category: 'Automotive', logoUrl: '' },
-        { _id: '11', name: 'Beverage Co', category: 'FMCG', logoUrl: '' },
-        { _id: '12', name: 'Airline', category: 'Travel', logoUrl: '' }
+        { _id: '1', name: 'Tech Solutions', category: 'Corporate', logoUrl: 'https://cdn-icons-png.flaticon.com/128/3067/3067175.png' },
+        { _id: '2', name: 'Global Logistics', category: 'Industrial', logoUrl: 'https://cdn-icons-png.flaticon.com/128/2828/2828586.png' },
+        { _id: '3', name: 'City Hospital', category: 'Healthcare', logoUrl: 'https://cdn-icons-png.flaticon.com/128/2966/2966334.png' },
+        { _id: '4', name: 'Grand Hotel', category: 'Hospitality', logoUrl: 'https://cdn-icons-png.flaticon.com/128/201/201623.png' },
+        { _id: '5', name: 'EduSystems', category: 'Education', logoUrl: 'https://cdn-icons-png.flaticon.com/128/2436/2436874.png' },
+        { _id: '6', name: 'Metro Build', category: 'Construction', logoUrl: 'https://cdn-icons-png.flaticon.com/128/4072/4072307.png' },
+        { _id: '7', name: 'Safe Bank', category: 'Banking', logoUrl: 'https://cdn-icons-png.flaticon.com/128/2830/2830284.png' },
+        { _id: '8', name: 'Retail Giant', category: 'Retail', logoUrl: 'https://cdn-icons-png.flaticon.com/128/1170/1170678.png' },
+        { _id: '9', name: 'Tech Giant', category: 'Technology', logoUrl: 'https://cdn-icons-png.flaticon.com/128/2083/2083213.png' },
+        { _id: '10', name: 'Auto Motive', category: 'Automotive', logoUrl: 'https://cdn-icons-png.flaticon.com/128/776/776625.png' },
+        { _id: '11', name: 'Beverage Co', category: 'FMCG', logoUrl: 'https://cdn-icons-png.flaticon.com/128/931/931949.png' },
+        { _id: '12', name: 'Airline', category: 'Travel', logoUrl: 'https://cdn-icons-png.flaticon.com/128/826/826070.png' }
     ];
 
     const clients = dbClients.length > 0 ? dbClients : fallbackClients;
@@ -55,9 +55,9 @@ export default async function ClientsPage() {
                         <div key={client._id} className="flex flex-col items-center p-8 bg-white rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group">
                             <div className="h-20 w-20 relative mb-4 flex items-center justify-center">
                                 <img
-                                    src={client.logoUrl || `https://ui-avatars.com/api/?name=${client.name}&background=e6f7ff&color=1890ff&size=128&font-size=0.4`}
+                                    src={client.logoUrl}
                                     alt={client.name}
-                                    className={`max-h-full max-w-full object-contain transition-all duration-300 ${client.logoUrl ? 'grayscale group-hover:grayscale-0' : ''}`}
+                                    className="max-h-full max-w-full object-contain grayscale group-hover:grayscale-0 transition-all duration-300"
                                 />
                             </div>
                             <h3 className="text-center font-bold text-gray-800 group-hover:text-blue-600 transition-colors">{client.name}</h3>
