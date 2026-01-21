@@ -18,18 +18,18 @@ export default async function ClientsPage() {
     const dbClients = await getClients();
 
     const fallbackClients = [
-        { _id: '1', name: 'Tech Solutions', category: 'Corporate', logoUrl: 'https://logo.clearbit.com/oracle.com' },
-        { _id: '2', name: 'Global Logistics', category: 'Industrial', logoUrl: 'https://logo.clearbit.com/fedex.com' },
-        { _id: '3', name: 'City Hospital', category: 'Healthcare', logoUrl: 'https://logo.clearbit.com/mayoclinic.org' },
-        { _id: '4', name: 'Grand Hotel', category: 'Hospitality', logoUrl: 'https://logo.clearbit.com/marriott.com' },
-        { _id: '5', name: 'EduSystems', category: 'Education', logoUrl: 'https://logo.clearbit.com/harvard.edu' },
-        { _id: '6', name: 'Metro Build', category: 'Construction', logoUrl: 'https://logo.clearbit.com/cat.com' },
-        { _id: '7', name: 'Safe Bank', category: 'Banking', logoUrl: 'https://logo.clearbit.com/chase.com' },
-        { _id: '8', name: 'Retail Giant', category: 'Retail', logoUrl: 'https://logo.clearbit.com/walmart.com' },
-        { _id: '9', name: 'Tech Giant', category: 'Technology', logoUrl: 'https://logo.clearbit.com/ibm.com' },
-        { _id: '10', name: 'Auto Motive', category: 'Automotive', logoUrl: 'https://logo.clearbit.com/ford.com' },
-        { _id: '11', name: 'Beverage Co', category: 'FMCG', logoUrl: 'https://logo.clearbit.com/coca-cola.com' },
-        { _id: '12', name: 'Airline', category: 'Travel', logoUrl: 'https://logo.clearbit.com/delta.com' }
+        { _id: '1', name: 'Tech Solutions', category: 'Corporate', logoUrl: '' },
+        { _id: '2', name: 'Global Logistics', category: 'Industrial', logoUrl: '' },
+        { _id: '3', name: 'City Hospital', category: 'Healthcare', logoUrl: '' },
+        { _id: '4', name: 'Grand Hotel', category: 'Hospitality', logoUrl: '' },
+        { _id: '5', name: 'EduSystems', category: 'Education', logoUrl: '' },
+        { _id: '6', name: 'Metro Build', category: 'Construction', logoUrl: '' },
+        { _id: '7', name: 'Safe Bank', category: 'Banking', logoUrl: '' },
+        { _id: '8', name: 'Retail Giant', category: 'Retail', logoUrl: '' },
+        { _id: '9', name: 'Tech Giant', category: 'Technology', logoUrl: '' },
+        { _id: '10', name: 'Auto Motive', category: 'Automotive', logoUrl: '' },
+        { _id: '11', name: 'Beverage Co', category: 'FMCG', logoUrl: '' },
+        { _id: '12', name: 'Airline', category: 'Travel', logoUrl: '' }
     ];
 
     const clients = dbClients.length > 0 ? dbClients : fallbackClients;
