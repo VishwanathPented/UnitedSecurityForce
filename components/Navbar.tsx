@@ -38,9 +38,9 @@ const Navbar = () => {
 
     return (
         <nav
-            className={`fixed w-full z-50 transition-all duration-300 ${scrolled
-                    ? 'bg-white/90 backdrop-blur-md shadow-md py-2 border-b border-gray-100'
-                    : 'bg-transparent py-4'
+            className={`fixed w-full z-[1000] transition-all duration-300 ${scrolled
+                ? 'bg-white/90 backdrop-blur-md shadow-md py-2 border-b border-gray-100'
+                : 'bg-transparent py-4'
                 }`}
         >
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -67,8 +67,8 @@ const Navbar = () => {
                                 key={item.key}
                                 href={item.key}
                                 className={`px-5 py-2 rounded-full text-sm font-medium transition-all duration-300 ${pathname === item.key
-                                        ? 'bg-blue-600 text-white shadow-md'
-                                        : scrolled ? 'text-gray-700 hover:text-blue-600 hover:bg-gray-100' : 'text-white hover:bg-white/20'
+                                    ? 'bg-blue-600 text-white shadow-md'
+                                    : scrolled ? 'text-gray-700 hover:text-blue-600 hover:bg-gray-100' : 'text-white hover:bg-white/20'
                                     }`}
                             >
                                 {item.label}
