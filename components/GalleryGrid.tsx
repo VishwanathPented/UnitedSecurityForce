@@ -26,7 +26,7 @@ const GalleryGrid: React.FC<GalleryGridProps> = ({ items }) => {
                     cover={
                         <div className="h-72 overflow-hidden relative">
                             <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors z-10" />
-                            <img alt={item.title} src={item.imageUrl} className="h-full w-full object-cover group-hover:scale-110 transition-transform duration-700" />
+                            <img alt={item.title} src={item.imageUrl || 'https://images.unsplash.com/photo-1557597774-9d273605dfa9?q=80&w=2670&auto=format&fit=crop'} className="h-full w-full object-cover group-hover:scale-110 transition-transform duration-700" />
                         </div>
                     }
                     styles={{ body: { padding: '1rem', textAlign: 'center' } }}
