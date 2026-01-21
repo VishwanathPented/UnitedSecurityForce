@@ -107,7 +107,7 @@ const Navbar = () => {
                 onClose={onClose}
                 open={visible}
                 closeIcon={<CloseOutlined style={{ color: '#1e3a8a' }} />}
-                bodyStyle={{ padding: 0 }}
+                styles={{ body: { padding: 0 } }}
             >
                 <Menu
                     mode="vertical"

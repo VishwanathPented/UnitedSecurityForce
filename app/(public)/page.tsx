@@ -147,7 +147,7 @@ export default async function Home() {
                       />
                     </div>
                   }
-                  bodyStyle={{ padding: '2rem' }}
+                  styles={{ body: { padding: '2rem' } }}
                 >
                   <h3 className="text-2xl font-bold mb-3 text-gray-900 group-hover:text-blue-600 transition-colors flex items-center justify-between">
                     {service.title}
