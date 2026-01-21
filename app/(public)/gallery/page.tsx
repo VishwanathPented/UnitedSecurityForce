@@ -56,16 +56,15 @@ export default async function GalleryPage() {
                                     <img alt={item.title} src={item.imageUrl} className="h-full w-full object-cover group-hover:scale-110 transition-transform duration-700" />
                                 </div>
                             }
-                            }
-                    styles={{ body: { padding: '1rem', textAlign: 'center' } }}
+                            styles={{ body: { padding: '1rem', textAlign: 'center' } }}
                         >
-                    <Card.Meta
-                        title={<span className="text-lg font-bold text-gray-800">{item.title}</span>}
-                    />
-                </Card>
+                            <Card.Meta
+                                title={<span className="text-lg font-bold text-gray-800">{item.title}</span>}
+                            />
+                        </Card>
                     ))}
+                </div>
             </div>
-        </div>
         </div >
     );
 }
