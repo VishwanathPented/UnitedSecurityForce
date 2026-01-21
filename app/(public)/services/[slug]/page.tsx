@@ -70,21 +70,21 @@ async function getService(slug: string) {
             title: 'Event Security',
             slug: 'event-security',
             description: 'Crowd control and VIP protection for events of all sizes. We ensure safety without compromising the guest experience.',
-            image: 'https://images.unsplash.com/photo-1510511233900-1982d69181de?q=80&w=2367&auto=format&fit=crop'
+            image: 'https://images.unsplash.com/photo-1517457373958-b7bdd4587205?q=80&w=2669&auto=format&fit=crop'
         },
         {
             _id: '5',
             title: 'Private Investigation',
             slug: 'private-investigation',
             description: 'Discreet and thorough investigation services for personalized cases. Our licensed investigators handle every case with confidentiality and precision.',
-            image: 'https://images.unsplash.com/photo-1606627680164-893bd5757d5c?q=80&w=2670&auto=format&fit=crop'
+            image: 'https://images.unsplash.com/photo-1504457047772-27faf1c00561?q=80&w=2647&auto=format&fit=crop'
         },
         {
             _id: '6',
             title: 'Facility Management',
             slug: 'facility-management',
             description: 'Complete facility maintenance including housekeeping, technical support, and waste management. One partner for all your facility needs.',
-            image: 'https://images.unsplash.com/photo-1581578731117-104f8a3d46a8?q=80&w=2727&auto=format&fit=crop'
+            image: 'https://images.unsplash.com/photo-1581092160562-40aa08e78837?q=80&w=2670&auto=format&fit=crop'
         }
     ];
 
