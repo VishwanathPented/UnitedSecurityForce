@@ -231,13 +231,13 @@ export default async function Home() {
           <h2 className="text-3xl font-bold mb-12">Trusted by Industry Leaders</h2>
           <div className="flex flex-wrap justify-center items-center gap-12 md:gap-20 opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
             {[
-              'https://logo.clearbit.com/google.com',
-              'https://logo.clearbit.com/microsoft.com',
-              'https://logo.clearbit.com/spotify.com',
-              'https://logo.clearbit.com/amazon.com',
-              'https://logo.clearbit.com/airbnb.com'
+              '/images/partners/logo-1.png',
+              '/images/partners/logo-2.png',
+              '/images/partners/logo-1.png',
+              '/images/partners/logo-2.png',
+              '/images/partners/logo-1.png'
             ].map((logo, i) => (
-              <div key={i} className="h-12 w-auto transition-transform hover:scale-110">
+              <div key={i} className="h-20 w-auto transition-transform hover:scale-110 grayscale hover:grayscale-0 opacity-80 hover:opacity-100">
                 <img src={logo} alt="Partner Logo" className="h-full w-auto object-contain brightness-0 invert" />
               </div>
             ))}
