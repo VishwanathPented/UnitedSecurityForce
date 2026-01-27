@@ -33,7 +33,7 @@ async function getService(slug: string) {
           • Reception Security: Blending customer service with vigilance.
 
           All our guards undergo rigorous background checks and intensive training in conflict resolution, emergency response, and first aid.`,
-            image: 'https://images.unsplash.com/photo-1557597774-9d273605dfa9?q=80&w=2670&auto=format&fit=crop'
+            image: '/images/manned-guarding.png'
         },
         {
             _id: '2',

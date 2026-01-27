@@ -34,21 +34,21 @@ export default async function Home() {
       title: 'Manned Guarding',
       slug: 'manned-guarding',
       description: 'Professional security personnel for your business, event, or residential property. Our guards are vigorously trained and vetted.',
-      image: 'https://images.unsplash.com/photo-1557597774-9d273605dfa9?q=80&w=2670&auto=format&fit=crop'
+      image: '/images/manned-guarding.png'
     },
     {
       _id: '2',
       title: 'Electronic Surveillance',
       slug: 'electronic-surveillance',
       description: 'State-of-the-art CCTV monitoring and alarm systems ensuring 24/7 protection. Remote viewing and instant alerts included.',
-      image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=2000&auto=format&fit=crop'
+      image: 'https://images.unsplash.com/photo-1557597774-9d273605dfa9?q=80&w=2670&auto=format&fit=crop'
     },
     {
       _id: '3',
       title: 'Corporate Security',
       slug: 'corporate-security',
       description: 'Tailored security solutions for corporate offices, including access control, front-desk security, and risk assessment.',
-      image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2301&auto=format&fit=crop'
+      image: 'https://images.unsplash.com/photo-1497215728101-856f4ea42174?q=80&w=2670&auto=format&fit=crop'
     }
   ];
 
@@ -62,7 +62,7 @@ export default async function Home() {
         <div className="absolute inset-0 z-0">
           <div className="absolute inset-0 bg-gradient-to-r from-blue-900/90 via-slate-900/80 to-slate-900/70 z-10" />
           <img
-            src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=2670&auto=format&fit=crop"
+            src="/images/hero-bg.png"
             alt="Security Background"
             className="w-full h-full object-cover animate-[scale_20s_ease-in-out_infinite_alternate]"
           />

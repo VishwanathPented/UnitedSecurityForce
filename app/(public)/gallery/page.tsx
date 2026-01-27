@@ -18,12 +18,12 @@ export default async function GalleryPage() {
     const dbItems = await getGallery();
 
     const fallbackItems = [
-        { _id: '1', title: 'Security Training', imageUrl: 'https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=2670&auto=format&fit=crop' },
-        { _id: '2', title: 'Corporate Event', imageUrl: 'https://images.unsplash.com/photo-1551818255-e6e10975bc17?q=80&w=2573&auto=format&fit=crop' },
-        { _id: '3', title: 'Control Room', imageUrl: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=2000&auto=format&fit=crop' },
-        { _id: '4', title: 'Patrol Vehicle', imageUrl: 'https://images.unsplash.com/photo-1625218731307-2a621be1461f?q=80&w=2670&auto=format&fit=crop' },
-        { _id: '5', title: 'K9 Unit', imageUrl: 'https://images.unsplash.com/photo-1534367507873-d2d7e24c797f?q=80&w=2670&auto=format&fit=crop' },
-        { _id: '6', title: 'Building Security', imageUrl: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2670&auto=format&fit=crop' },
+        { _id: '1', title: 'Security Training', imageUrl: '/images/generic-placeholder.png' },
+        { _id: '2', title: 'Corporate Event', imageUrl: '/images/generic-placeholder.png' },
+        { _id: '3', title: 'Control Room', imageUrl: '/images/generic-placeholder.png' },
+        { _id: '4', title: 'Patrol Vehicle', imageUrl: '/images/generic-placeholder.png' },
+        { _id: '5', title: 'K9 Unit', imageUrl: '/images/generic-placeholder.png' },
+        { _id: '6', title: 'Building Security', imageUrl: '/images/generic-placeholder.png' },
     ];
 
     const items = dbItems.length > 0 ? dbItems : fallbackItems;
@@ -33,7 +33,7 @@ export default async function GalleryPage() {
             {/* Header */}
             <div className="relative py-24 bg-slate-900 text-white text-center overflow-hidden">
                 <div className="absolute inset-0 bg-blue-900 opacity-90 z-0"></div>
-                <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1551818255-e6e10975bc17?q=80&w=2573&auto=format&fit=crop')] bg-cover bg-center opacity-20"></div>
+                <div className="absolute inset-0 bg-[url('/images/generic-placeholder.png')] bg-cover bg-center opacity-20"></div>
 
                 <div className="relative z-10 max-w-4xl mx-auto px-4">
                     <h1 className="text-4xl md:text-5xl font-extrabold mb-4 tracking-tight">Our Gallery</h1>

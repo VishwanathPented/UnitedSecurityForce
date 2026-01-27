@@ -29,7 +29,7 @@ const ContactPage = () => {
             <div className="relative h-[50vh] min-h-[400px] flex items-center justify-center bg-slate-900 text-white overflow-hidden">
                 <div className="absolute inset-0 bg-blue-900/80 z-10" />
                 <div
-                    className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2670&auto=format&fit=crop')] bg-cover bg-center opacity-40 animate-[scale_20s_ease-in-out_infinite_alternate]"
+                    className="absolute inset-0 bg-[url('/images/generic-placeholder.png')] bg-cover bg-center opacity-40 animate-[scale_20s_ease-in-out_infinite_alternate]"
                 />
 
                 <div className="relative z-20 text-center px-4 animate-[slideUp_0.8s_ease-out]">

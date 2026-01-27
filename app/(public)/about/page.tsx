@@ -7,7 +7,7 @@ const AboutPage = () => {
         <div className="bg-white min-h-screen">
             {/* Header */}
             <div className="relative py-24 bg-slate-900 text-white text-center overflow-hidden">
-                <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=2684&auto=format&fit=crop')] bg-cover bg-center opacity-10"></div>
+                <div className="absolute inset-0 bg-[url('/images/about-hero.png')] bg-cover bg-center opacity-10"></div>
                 <div className="relative z-10 max-w-4xl mx-auto px-4">
                     <h1 className="text-5xl font-extrabold tracking-tight mb-6">About United Security Force</h1>
                     <p className="text-xl text-slate-300 max-w-2xl mx-auto">
