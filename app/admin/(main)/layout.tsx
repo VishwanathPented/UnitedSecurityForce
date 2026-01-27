@@ -67,16 +67,14 @@ const AdminLayout = ({ children }: { children: React.ReactNode }) => {
         },
     ];
 
-    const userMenu = (
-        <Menu items={[
-            {
-                key: 'logout',
-                label: 'Logout',
-                icon: <LogoutOutlined />,
-                onClick: handleLogout
-            }
-        ]} />
-    );
+    const userMenuItems = [
+        {
+            key: 'logout',
+            label: 'Logout',
+            icon: <LogoutOutlined />,
+            onClick: handleLogout
+        }
+    ];
 
     return (
         <Layout style={{ minHeight: '100vh' }}>
@@ -116,7 +114,7 @@ const AdminLayout = ({ children }: { children: React.ReactNode }) => {
                             height: 64,
                         }}
                     />
-                    <Dropdown overlay={userMenu} placement="bottomRight">
+                    <Dropdown menu={{ items: userMenuItems }} placement="bottomRight">
                         <div style={{ cursor: 'pointer', display: 'flex', alignItems: 'center', gap: 8 }}>
                             <Avatar icon={<UserOutlined />} />
                             <span>Admin</span>
